@@ -3,8 +3,8 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const employeeApi = createApi({
   reducerPath: "employeeApi",
   baseQuery: fetchBaseQuery({
-    // baseUrl: "https://hrms-lite-production-8edf.up.railway.app/",
-    baseUrl: "http://127.0.0.1:8000",
+    baseUrl: "https://hrms-lite-production-8edf.up.railway.app/",
+    // baseUrl: "http://127.0.0.1:8000",
   }),
   tagTypes: ["Employee"],
   endpoints: (builder) => ({

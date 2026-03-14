@@ -6,14 +6,14 @@ A Full-Stack Human Resource Management System built with:
 - React + Vite (Frontend)
 - MongoDB (Database)
 - Railway (Backend Deployment)
-- Vercel (Frontend Deployment)
+- Netlify (Frontend Deployment)
 
 ---
 
 ## 🚀 Live project demo
 
-- Frontend : https://hrms-lite-project-snowy.vercel.app/
-- Backend : https://hrms-lite-production-f1e9.up.railway.app/docs
+- Frontend : https://hrms-lite-application.netlify.app/
+- Backend : https://hrms-lite-production-8edf.up.railway.app/docs
 
 ---
 
