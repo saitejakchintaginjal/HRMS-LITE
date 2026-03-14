@@ -12,7 +12,7 @@ function Layout({ children }) {
   const inactive = "text-gray-300 hover:bg-gray-800 hover:text-white";
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex">
+    <div className="h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex">
       <aside className="w-64 bg-gradient-to-b from-gray-900 via-gray-900 to-gray-800 text-white p-6 flex flex-col shadow-xl">
         <h1 className="text-2xl font-bold tracking-wide mb-10 text-blue-400">
           HRMS Lite

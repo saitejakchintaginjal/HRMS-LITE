@@ -4,7 +4,6 @@ export const employeeApi = createApi({
   reducerPath: "employeeApi",
   baseQuery: fetchBaseQuery({
     baseUrl: "https://hrms-lite-production-8edf.up.railway.app/",
-    // baseUrl: "http://127.0.0.1:8000",
   }),
   tagTypes: ["Employee"],
   endpoints: (builder) => ({
@@ -34,7 +33,7 @@ export const employeeApi = createApi({
         method: "PUT",
         body: data,
       }),
-      invalidatesTags: (result, error, { id }) => [
+      invalidatesTags: ({ id }) => [
         { type: "Employee", id },
         { type: "Employee", id: "LIST" },
       ],
@@ -45,7 +44,7 @@ export const employeeApi = createApi({
         url: `employees/${id}`,
         method: "DELETE",
       }),
-      invalidatesTags: (result, error, id) => [
+      invalidatesTags: (id) => [
         { type: "Employee", id },
         { type: "Employee", id: "LIST" },
       ],

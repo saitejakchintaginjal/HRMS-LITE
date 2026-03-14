@@ -24,9 +24,12 @@ function StatCard({ title, value, icon, tone = "indigo", helper, progress }) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 14 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.35 }}
+      animate={{ y: [0, -6, 0] }}
+      transition={{
+        duration: 3,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
       className="bg-white/80 backdrop-blur-md rounded-3xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition"
     >
       <div className="flex items-start justify-between">

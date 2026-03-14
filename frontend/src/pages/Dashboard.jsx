@@ -110,7 +110,6 @@ function Dashboard() {
                 <h2 className="text-lg font-semibold text-gray-800">
                   Recent Attendance
                 </h2>
-                <p className="text-sm text-gray-500 mt-1">Latest records</p>
               </div>
               <span className="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-50 text-indigo-700">
                 Showing {Math.min(recentAttendance.length, 8)}
