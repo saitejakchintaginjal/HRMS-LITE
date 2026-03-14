@@ -193,7 +193,7 @@ function Employees() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-6 md:p-10">
+    <div className="h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-6 md:p-10">
       <div className="max-w-6xl mx-auto space-y-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 bg-white/70 backdrop-blur-lg p-6 rounded-2xl shadow-lg border border-white/40">

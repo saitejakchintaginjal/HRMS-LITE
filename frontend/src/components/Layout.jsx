@@ -12,7 +12,8 @@ function Layout({ children }) {
   const inactive = "text-gray-300 hover:bg-gray-800 hover:text-white";
 
   return (
-    <div className="h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex">
+    <div className="h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex overflow-hidden">
+      {/* Sidebar */}
       <aside className="w-64 bg-gradient-to-b from-gray-900 via-gray-900 to-gray-800 text-white p-6 flex flex-col shadow-xl">
         <h1 className="text-2xl font-bold tracking-wide mb-10 text-blue-400">
           HRMS Lite
@@ -48,7 +49,9 @@ function Layout({ children }) {
         </nav>
       </aside>
 
-      <div className="flex-1 flex flex-col">
+      {/* Right section */}
+      <div className="flex-1 flex flex-col overflow-hidden">
+        {/* Header */}
         <header className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 shadow-md px-8 py-4 flex justify-between items-center">
           <h2 className="text-xl font-semibold text-white">Admin Dashboard</h2>
 
@@ -59,7 +62,8 @@ function Layout({ children }) {
           </div>
         </header>
 
-        <main className="p-8 flex-1">{children}</main>
+        {/* Scrollable content */}
+        <main className="flex-1 p-8">{children}</main>
       </div>
     </div>
   );

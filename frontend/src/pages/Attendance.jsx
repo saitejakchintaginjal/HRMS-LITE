@@ -155,7 +155,7 @@ function Attendance() {
 
   if (!employeesLoading && (!employees || employees.length === 0)) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-6 md:p-10">
+      <div className="h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-6 md:p-10">
         <div className="max-w-4xl mx-auto bg-white/70 backdrop-blur-lg border border-white/40 rounded-3xl shadow-lg p-10 text-center">
           <h2 className="text-2xl font-semibold text-gray-800">
             No Employees Found
