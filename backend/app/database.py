@@ -6,11 +6,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MONGO_URI = os.getenv("MONGO_URI")
-print(f"Connecting to MongoDB at: {MONGO_URI}")
+MONGO_URL = os.getenv("MONGO_URL")
+print(f"Connecting to MongoDB at: {MONGO_URL}")
 
 # ✅ Proper SSL Fix for macOS + Atlas
-client = AsyncIOMotorClient(MONGO_URI)
+client = AsyncIOMotorClient(MONGO_URL)
 
 db = client["hrms"]
 
